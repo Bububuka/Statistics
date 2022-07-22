@@ -9,10 +9,10 @@ public class StatsServiceTest {
     public void shouldFindSumOfAll() {
         StatsService service = new StatsService();
 
-        int[] sum = {145, 156, 345, 234, 134, 321, 187, 181, 165, 148, 133, 189};
+        long[] sum = {145, 156, 345, 234, 134, 321, 187, 181, 165, 148, 133, 189};
 
-        int expectedSum = 2338;
-        int actualSum = service.sumOfAll(sum);
+        long expectedSum = 2338;
+        long actualSum = service.sumOfAll(sum);
 
         Assertions.assertEquals(expectedSum, actualSum);
     }
@@ -21,10 +21,10 @@ public class StatsServiceTest {
     public void shouldFindAverageSum() {
         StatsService service = new StatsService();
 
-        int[] sum = {145, 156, 345, 234, 134, 321, 187, 181, 165, 148, 133, 189};
+        long[] sum = {145, 156, 345, 234, 134, 321, 187, 181, 165, 148, 133, 189};
 
-        int expectedSum = 194;
-        int actualSum = service.averageSum(sum);
+        long expectedSum = 194;
+        long actualSum = service.averageSum(sum);
 
         Assertions.assertEquals(expectedSum, actualSum);
     }
@@ -58,10 +58,10 @@ public class StatsServiceTest {
     public void monthWithBelowAverageSales() {
         StatsService service = new StatsService();
 
-        int[] sum = {137, 255, 211, 111};
+        long[] sum = {137, 255, 211, 111};
 
-        int expectedSum = 2;
-        int actualSum = service.monthWithBelowAverageSales(sum);
+        long expectedSum = 2;
+        long actualSum = service.monthWithBelowAverageSales(sum);
 
         Assertions.assertEquals(expectedSum, actualSum);
     }
@@ -70,10 +70,10 @@ public class StatsServiceTest {
     public void monthWithAboveAverageSales() {
         StatsService service = new StatsService();
 
-        int[] sum = {137, 155, 211, 111, 5};
+        long[] sum = {137, 155, 211, 111, 5};
 
-        int expectedSum = 3;
-        int actualSum = service.monthWithAboveAverageSales(sum);
+        long expectedSum = 3;
+        long actualSum = service.monthWithAboveAverageSales(sum);
 
         Assertions.assertEquals(expectedSum, actualSum);
     }
